@@ -1,0 +1,106 @@
+/* dancing-script-600 - latin */
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/dancing-script-v24-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/dancing-script-v24-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/dancing-script-v24-latin-600.woff2") format("woff2"), url("../assets/fonts/dancing-script-v24-latin-600.woff") format("woff"), url("../assets/fonts/dancing-script-v24-latin-600.ttf") format("truetype"), url("../assets/fonts/dancing-script-v24-latin-600.svg#DancingScript") format("svg"); /* Legacy iOS */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-regular.woff") format("woff"), url("../assets/fonts/montserrat-v25-latin-regular.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/montserrat-v25-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-latin-600.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-600.woff") format("woff"), url("../assets/fonts/montserrat-v25-latin-600.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-latin-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/montserrat-v25-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-700.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-latin-700.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-700.woff") format("woff"), url("../assets/fonts/montserrat-v25-latin-700.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-latin-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/montserrat-v25-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-latin-800.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-800.woff") format("woff"), url("../assets/fonts/montserrat-v25-latin-800.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-latin-800.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/montserrat-v25-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-latin-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-latin-900.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-latin-900.woff") format("woff"), url("../assets/fonts/montserrat-v25-latin-900.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-latin-900.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+#header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#header .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container i {
+  flex-basis: 250px;
+  display: flex;
+  justify-content: center;
+}
+#header .container #title {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 55px;
+  flex-basis: 0;
+}
+#header .container h2 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  flex-basis: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #222;
+}
+#app section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=App.css.map */
