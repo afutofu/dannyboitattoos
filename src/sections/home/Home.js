@@ -1,12 +1,18 @@
 import React from "react";
 
+import dbt1 from "../../assets/images/dbt1.jpg";
+
 import Header from "./Header";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
-    <div id="home">
+    <section id="home">
+      <img className="background-image" src={dbt1} />
       <Header />
-    </div>
+      <Navbar />
+      <div></div>
+    </section>
   );
 };
 

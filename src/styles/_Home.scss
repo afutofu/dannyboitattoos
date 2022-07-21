@@ -1,44 +1,129 @@
 @import "./variables";
 @import "./fonts";
 
-#header{
-    width:100%;
-    height: 200px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: $mainTextColor;
+#home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
 
-    .container{
-        width: 80%;
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        // flex-basis: 0;
-        
-        i{
-            flex-basis: 250px;
-            display:flex;
-            justify-content: center;
-        }
-
-        #title{
-            font-family: 'Dancing Script', sans-serif;
-            font-size: 55px;
-            flex-basis: 0;
-        }
-
-        h2{
-            font-size: 20px;
-            font-family: 'Montserrat';
-            font-weight: 400;
-            flex-basis: 250px;
-            display:flex;
-            justify-content: center;
-        }
-    }
+  .background-image {
+    z-index: -50;
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 100vw;
+    height: 270vh;
+    object-fit: fill;
+  }
 }
 
-#navbar{
-    
+#header {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $mainTextColor;
+  background-color: $bgColor;
+
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .instagram-icon {
+    flex-basis: 250px;
+    display: flex;
+    justify-content: center;
+
+    i {
+      width: 45px;
+      height: 45px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    ::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: calc(100% + 50px);
+      z-index: -1;
+      background-color: $bgColor;
+      transform-origin: top right;
+      transform: skewY(-3deg);
+    }
+  }
+
+  #title {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 55px;
+    flex-basis: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    flex-basis: 250px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  background-color: $bgColor;
+
+  .container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.transitionBlock1 {
+  background-color: $bgColor;
+  z-index: -10;
+  position: relative;
+  top: -63px;
+  height: 120px;
+  width: 110%;
+  transform: skewY(-3deg);
+}
+
+.transitionBlock2 {
+  background-color: $bgColor;
+  z-index: -10;
+  position: absolute;
+  top: calc(100vh - 60px);
+  height: 120px;
+  width: 110%;
+  transform: skewY(3deg);
 }
