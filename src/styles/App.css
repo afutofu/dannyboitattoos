@@ -64,6 +64,18 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#home .book-info {
+  position: absolute;
+  bottom: 15vh;
+  right: 10vw;
+}
+#home .book-info .text {
+  color: white;
+  text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 500;
+}
 
 header {
   width: 100%;
@@ -383,6 +395,7 @@ header h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
 }
 
 .book-button-alt {
@@ -396,6 +409,7 @@ header h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #222;
 }
 
 footer {
