@@ -6,6 +6,7 @@ import BookButton from "../../components/BookButton";
 const Contact = () => {
   return (
     <section id="booking">
+      <div className="white-background" />
       <div className="container">
         <div className="info-alt">
           <h2>BOOKING</h2>

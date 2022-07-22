@@ -10,13 +10,13 @@
   overflow: hidden;
 
   .background-image {
+    filter: grayscale(100%);
     z-index: -50;
-    position: absolute;
-    top: -10vh;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100vw;
-    height: 270vh;
-    object-fit: fill;
+    object-fit: cover;
   }
 }
 
@@ -67,7 +67,7 @@
       z-index: -1;
       background-color: $bgColor;
       transform-origin: top right;
-      transform: skewY(-3deg);
+      transform: skewY(-2deg);
     }
   }
 
@@ -108,24 +108,4 @@
     font-size: 20px;
     font-weight: 500;
   }
-}
-
-.transitionBlock1 {
-  background-color: $bgColor;
-  z-index: -10;
-  position: relative;
-  top: -63px;
-  height: 120px;
-  width: 110%;
-  transform: skewY(-3deg);
-}
-
-.transitionBlock2 {
-  background-color: $bgColor;
-  z-index: -10;
-  position: absolute;
-  top: calc(100vh - 60px);
-  height: 120px;
-  width: 110%;
-  transform: skewY(3deg);
 }

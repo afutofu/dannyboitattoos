@@ -2,6 +2,7 @@
 
 #gallery {
   position: relative;
+  padding-top: 70px;
   width: 100%;
   min-height: 600px;
   display: flex;
@@ -10,15 +11,9 @@
   align-items: center;
   background-color: $bgColor;
 
-  .image-container-wrapper {
-    position: relative;
-    height: 800px;
-    // overflow: hidden;
-  }
-
   .image-container {
     position: relative;
-    min-height: calc($imageHeight * 2 + 70px + 50px);
+    min-height: calc($imageHeight * 2 + 70px + 70px);
     width: 100%;
     box-sizing: content-box;
     overflow: hidden;
@@ -48,7 +43,7 @@
   }
 
   .image {
-    width: $imageHeight !important;
+    width: $imageHeight;
     height: $imageHeight;
     background-color: white;
     margin-right: 70px;
@@ -64,7 +59,7 @@
     z-index: -1;
     background-color: $bgColor;
     transform-origin: top right;
-    transform: skewY(3deg);
+    transform: skewY(2deg);
   }
 
   ::after {
@@ -77,6 +72,6 @@
     z-index: -1;
     background-color: $bgColor;
     transform-origin: bottom right;
-    transform: skewY(3deg);
+    transform: skewY(2deg);
   }
 }

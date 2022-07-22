@@ -21,7 +21,8 @@
   color: $mainTextColor;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  z-index: 20;
 
   h2 {
     font-weight: 700;
@@ -49,7 +50,7 @@
   color: $bgColor;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 
   h2 {
     font-weight: 700;
