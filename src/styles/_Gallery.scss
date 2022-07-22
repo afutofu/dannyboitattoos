@@ -1,0 +1,110 @@
+@import "./variables";
+
+#gallery {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgColor;
+
+  .info {
+    color: $mainTextColor;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  a {
+    color: $mainTextColor;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .image-container-wrapper {
+    position: relative;
+    height: 800px;
+    // overflow: hidden;
+  }
+
+  .image-container {
+    position: relative;
+    min-height: calc($imageHeight * 2 + 70px + 50px);
+    width: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+  }
+
+  .image-container-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $imageHeight;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .image-container-2 {
+    position: absolute;
+    top: $imageHeight + 70px;
+    left: 0;
+    height: $imageHeight;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .image {
+    width: $imageHeight !important;
+    height: $imageHeight;
+    background-color: white;
+    margin-right: 70px;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 20px);
+    z-index: -1;
+    background-color: $bgColor;
+    transform-origin: top right;
+    transform: skewY(3deg);
+  }
+
+  ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 90px);
+    z-index: -1;
+    background-color: $bgColor;
+    transform-origin: bottom right;
+    transform: skewY(3deg);
+  }
+}
