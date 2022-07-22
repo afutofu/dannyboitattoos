@@ -103,8 +103,12 @@
 
 footer {
   width: 100%;
+  height: 45px;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 15px;
+  background-color: $mainTextColor;
+  color: $bgColor;
+  font-family: "Montserrat", sans-serif;
 }

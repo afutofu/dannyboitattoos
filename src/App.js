@@ -12,6 +12,7 @@ function App() {
       <Gallery />
       <Booking />
       <Contact />
+      <footer>&#169; 2022 DannyBoiTattoos</footer>
     </div>
   );
 }
