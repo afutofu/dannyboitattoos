@@ -1,5 +1,6 @@
 @import "./Home";
 @import "./Gallery";
+@import "./Booking";
 @import "./variables";
 
 * {
@@ -13,7 +14,89 @@
 }
 
 .container {
-  width: 60%;
+  width: 50%;
+}
+
+.info {
+  color: $mainTextColor;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  a {
+    color: $mainTextColor;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.info-alt {
+  color: $bgColor;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  a {
+    color: $mainTextColor;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.book-button {
+  width: 200px;
+  height: 60px;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $bgColor;
+  background-color: $mainTextColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-button-alt {
+  width: 200px;
+  height: 60px;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $mainTextColor;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {

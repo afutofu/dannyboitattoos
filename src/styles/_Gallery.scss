@@ -10,34 +10,6 @@
   align-items: center;
   background-color: $bgColor;
 
-  .info {
-    color: $mainTextColor;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-  }
-
-  h2 {
-    font-weight: 600;
-    font-size: 22px;
-  }
-
-  h3 {
-    font-weight: 400;
-    font-size: 18px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  a {
-    color: $mainTextColor;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
   .image-container-wrapper {
     position: relative;
     height: 800px;
