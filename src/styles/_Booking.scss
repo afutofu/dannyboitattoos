@@ -3,7 +3,7 @@
 #booking {
   position: relative;
   padding-top: 130px;
-  padding-bottom: 50px;
+  padding-bottom: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,11 +22,11 @@
   .schedule {
     display: flex;
     justify-content: space-between;
-    // margin-bottom: 30px;
+    margin-bottom: 30px;
 
     p {
       font-size: 24px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     img {

@@ -2,7 +2,7 @@
 
 #gallery {
   position: relative;
-  padding-top: 70px;
+  padding-top: 60px;
   width: 100%;
   min-height: 600px;
   display: flex;
@@ -13,7 +13,7 @@
 
   .image-container {
     position: relative;
-    min-height: calc($imageHeight * 2 + 70px + 70px);
+    min-height: calc($imageHeight * 2 + 70px + 90px);
     width: 100%;
     box-sizing: content-box;
     overflow: hidden;
@@ -68,10 +68,10 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100% + 90px);
+    height: calc(100%);
     z-index: -1;
     background-color: $bgColor;
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transform: skewY(2deg);
   }
 }

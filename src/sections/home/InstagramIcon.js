@@ -1,13 +1,17 @@
 import React from "react";
 
-import icon from "../../assets/icons/instagram-48.png";
+import icon from "../../assets/icons/instagram-90.png";
 
 const InstagramIcon = () => {
   return (
     <div className="instagram-icon">
-      <i>
+      <a
+        href="https://www.instagram.com/dannyboimendez88/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={icon} />
-      </i>
+      </a>
     </div>
   );
 };
