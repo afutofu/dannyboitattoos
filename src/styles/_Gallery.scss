@@ -30,13 +30,12 @@
     align-items: center;
     box-sizing: border-box;
 
-    .image{
+    .image {
       width: $imageHeight;
-    height: $imageHeight;
-    background-color: white;
-    margin-left: 70px;
+      height: $imageHeight;
+      background-color: white;
+      margin-left: 70px;
     }
-
   }
 
   .image-container-2 {
@@ -48,14 +47,13 @@
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    
-    .image{
+
+    .image {
       width: $imageHeight;
       height: $imageHeight;
       background-color: white;
       margin-right: 70px;
     }
-    
   }
 
   ::before {
@@ -86,9 +84,9 @@
 }
 
 .instagram {
-  transition: color 0.1s;
+  transition: text-shadow 0.1s;
 
-  :hover {
-    color: #ff00c7;
+  &:hover {
+    text-shadow: 0px 0px 10px #ff00c7, 0px 0px 10px #ff00c7;
   }
 }

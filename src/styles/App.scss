@@ -86,7 +86,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $mainTextColor;
+  border: 3px solid $mainTextColor;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    border-color: $bgColor;
+  }
 }
 
 .book-button-alt {
@@ -100,7 +107,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $bgColor;
+  border: 3px solid $bgColor;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $mainTextColor;
+  }
 }
 
 footer {
