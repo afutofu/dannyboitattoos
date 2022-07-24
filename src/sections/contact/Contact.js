@@ -33,28 +33,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="directions">
-          <div class="mapouter">
-            <div class="gmap_canvas">
+          <div className="mapouter">
+            <div className="gmap_canvas">
               <iframe
                 width="300"
                 height="300"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=655%20S%20Orcas%20St,%20Seattle,%20WA%2098108,%20USA&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
+                frameBorder="0"
                 scrolling="no"
-                marginheight="0"
-                marginwidth="0"
+                marginHeight="0"
+                marginWidth="0"
               ></iframe>
-              <a href="https://123movies-to.org"></a>
             </div>
           </div>
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=655+S+Orca+St+Seattle+WA+98108"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get directions with Google Maps
-          </a>
         </div>
       </div>
     </section>

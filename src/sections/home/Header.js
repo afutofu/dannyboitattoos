@@ -3,7 +3,7 @@ import InstagramIcon from "./InstagramIcon";
 
 const Header = () => {
   return (
-    <header>
+    <header id="header">
       <div className="container">
         <InstagramIcon />
         <h1 id="title">DannyBoiTattoos</h1>

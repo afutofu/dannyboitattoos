@@ -77,7 +77,7 @@
   font-weight: 500;
 }
 
-header {
+#header {
   width: 100%;
   height: 130px;
   position: relative;
@@ -87,28 +87,28 @@ header {
   color: white;
   background-color: #222;
 }
-header .container {
+#header .container {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .instagram-icon {
+#header .instagram-icon {
   flex-basis: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .instagram-icon:hover img {
+#header .instagram-icon:hover img {
   box-shadow: 0px 0px 10px 1px #ff00c7;
 }
-header .instagram-icon img {
+#header .instagram-icon img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   transition: box-shadow 0.1s;
 }
-header .instagram-icon ::after {
+#header .instagram-icon ::after {
   content: "";
   position: absolute;
   left: 0;
@@ -120,12 +120,12 @@ header .instagram-icon ::after {
   transform-origin: top right;
   transform: skewY(-2deg);
 }
-header #title {
+#header #title {
   font-family: "Dancing Script", sans-serif;
   font-size: 50px;
   flex-basis: 0;
 }
-header h2 {
+#header h2 {
   font-size: 17px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -135,6 +135,7 @@ header h2 {
 }
 
 #navbar {
+  position: relative;
   width: 100%;
   height: 40px;
   display: flex;
@@ -142,9 +143,12 @@ header h2 {
   align-items: flex-end;
   color: #ccc;
   background-color: #222;
+  z-index: 50;
+  transition: top 0.3s;
 }
 #navbar .container {
   width: 45%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
