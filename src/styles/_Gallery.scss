@@ -26,27 +26,36 @@
     height: $imageHeight;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+
+    .image{
+      width: $imageHeight;
+    height: $imageHeight;
+    background-color: white;
+    margin-left: 70px;
+    }
+
   }
 
   .image-container-2 {
     position: absolute;
-    top: $imageHeight + 70px;
+    top: calc($imageHeight + 70px);
     left: 0;
     height: $imageHeight;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-  }
-
-  .image {
-    width: $imageHeight;
-    height: $imageHeight;
-    background-color: white;
-    margin-right: 70px;
+    
+    .image{
+      width: $imageHeight;
+      height: $imageHeight;
+      background-color: white;
+      margin-right: 70px;
+    }
+    
   }
 
   ::before {
@@ -73,5 +82,13 @@
     background-color: $bgColor;
     transform-origin: bottom left;
     transform: skewY(2deg);
+  }
+}
+
+.instagram {
+  transition: color 0.1s;
+
+  :hover {
+    color: #ff00c7;
   }
 }

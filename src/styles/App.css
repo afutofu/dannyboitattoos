@@ -66,14 +66,14 @@
 }
 #home .book-info {
   position: absolute;
-  bottom: 15vh;
+  bottom: 13vh;
   right: 10vw;
 }
 #home .book-info .text {
   color: white;
   text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -117,11 +117,11 @@ header .instagram-icon ::after {
 }
 header #title {
   font-family: "Dancing Script", sans-serif;
-  font-size: 55px;
+  font-size: 50px;
   flex-basis: 0;
 }
 header h2 {
-  font-size: 19px;
+  font-size: 17px;
   font-family: "Montserrat";
   font-weight: 400;
   flex-basis: 250px;
@@ -146,7 +146,7 @@ header h2 {
 }
 #navbar h3 {
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -163,7 +163,7 @@ header h2 {
 }
 #gallery .image-container {
   position: relative;
-  min-height: 760px;
+  min-height: calc(70vh + 70px + 90px);
   width: 100%;
   box-sizing: content-box;
   overflow: hidden;
@@ -172,26 +172,32 @@ header h2 {
   position: absolute;
   top: 0;
   right: 0;
-  height: 300px;
+  height: 35vh;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
+}
+#gallery .image-container-1 .image {
+  width: 35vh;
+  height: 35vh;
+  background-color: white;
+  margin-left: 70px;
 }
 #gallery .image-container-2 {
   position: absolute;
-  top: 370px;
+  top: calc(35vh + 70px);
   left: 0;
-  height: 300px;
+  height: 35vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
 }
-#gallery .image {
-  width: 300px;
-  height: 300px;
+#gallery .image-container-2 .image {
+  width: 35vh;
+  height: 35vh;
   background-color: white;
   margin-right: 70px;
 }
@@ -220,6 +226,13 @@ header h2 {
   transform: skewY(2deg);
 }
 
+.instagram {
+  transition: color 0.1s;
+}
+.instagram :hover {
+  color: #ff00c7;
+}
+
 #booking {
   position: relative;
   padding-top: 130px;
@@ -244,12 +257,16 @@ header h2 {
   margin-bottom: 30px;
 }
 #booking .schedule p {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+#booking .schedule span {
+  font-weight: 600;
+  margin-right: 15px;
 }
 #booking .schedule img {
-  width: 330px;
-  height: 360px;
+  width: 310px;
+  height: 350px;
   background-color: #222;
   filter: grayscale(100%);
   transform-origin: center center;
@@ -263,7 +280,7 @@ header h2 {
 #contact {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,23 +294,23 @@ header h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #contact .contact-info-detail {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   width: 100%;
 }
 #contact .contact-info-detail img {
-  flex-basis: 50px;
-  width: 50px;
+  flex-basis: 35px;
+  width: 35px;
   margin-right: 40px;
 }
 #contact .contact-info-detail p {
   flex: 1;
-  font-size: 24px;
+  font-size: 22px;
 }
 #contact .directions {
   display: flex;
@@ -344,7 +361,7 @@ header h2 {
 }
 .info h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
 }
 .info h3 {
   font-weight: 400;
@@ -368,7 +385,7 @@ header h2 {
 }
 .info-alt h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
 }
 .info-alt h3 {
   font-weight: 400;
@@ -385,9 +402,9 @@ header h2 {
 }
 
 .book-button {
-  width: 200px;
-  height: 60px;
-  font-size: 26px;
+  width: 160px;
+  height: 50px;
+  font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   color: #222;
@@ -399,8 +416,8 @@ header h2 {
 }
 
 .book-button-alt {
-  width: 200px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
   font-size: 26px;
   font-weight: 800;
   text-transform: uppercase;

@@ -3,7 +3,7 @@
 #contact {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -17,25 +17,25 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .contact-info-detail {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     width: 100%;
 
     img {
-      flex-basis: 50px;
-      width: 50px;
+      flex-basis: 35px;
+      width: 35px;
       margin-right: 40px;
     }
 
     p {
       flex: 1;
-      font-size: 24px;
+      font-size: calc($headingSize - 2px);
     }
   }
 

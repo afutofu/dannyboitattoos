@@ -15,13 +15,27 @@ const Contact = () => {
         </div>
         <div className="schedule">
           <div>
-            <p>Monday 12:00 pm - 10:00 pm</p>
-            <p>Tuesday 12:00 pm - 10:00 pm</p>
-            <p>Wednesday 12:00 pm - 10:00 pm</p>
-            <p>Thursday 12:00 pm - 10:00 pm</p>
-            <p>Friday 12:00 pm - 8:00 pm</p>
-            <p>Saturday 12:00 pm - 8:00 pm</p>
-            <p>Sunday 2:00 pm - 8:00 pm</p>
+            <p>
+              <span>Monday</span> 12:00 pm - 10:00 pm
+            </p>
+            <p>
+              <span>Tuesday</span> 12:00 pm - 10:00 pm
+            </p>
+            <p>
+              <span>Wednesday</span> 12:00 pm - 10:00 pm
+            </p>
+            <p>
+              <span>Thursday</span> 12:00 pm - 10:00 pm
+            </p>
+            <p>
+              <span>Friday</span> 12:00 pm - 8:00 pm
+            </p>
+            <p>
+              <span>Saturday</span> 12:00 pm - 8:00 pm
+            </p>
+            <p>
+              <span>Sunday</span> 2:00 pm - 8:00 pm
+            </p>
           </div>
           <img src={dbt2} />
         </div>

@@ -21,14 +21,14 @@
 
   .book-info {
     position: absolute;
-    bottom: 15vh;
+    bottom: 13vh;
     right: 10vw;
 
     .text {
       color: $mainTextColor;
       text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
       margin-bottom: 40px;
-      font-size: 28px;
+      font-size: calc($headingSize);
       font-weight: 500;
     }
   }
@@ -78,12 +78,12 @@ header {
 
   #title {
     font-family: "Dancing Script", sans-serif;
-    font-size: 55px;
+    font-size: $titleSize;
     flex-basis: 0;
   }
 
   h2 {
-    font-size: 19px;
+    font-size: calc($navItemSize - 1px);
     font-family: "Montserrat";
     font-weight: 400;
     flex-basis: 250px;
@@ -110,7 +110,7 @@ header {
 
   h3 {
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: $navItemSize;
     font-weight: 500;
   }
 }

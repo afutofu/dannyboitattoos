@@ -21,7 +21,7 @@ const Contact = () => {
           </div>
           <div className="contact-info-detail">
             <img src={location} />
-            <p>655 S Orca St, Seattle, Washington 98108</p>
+            <p>655 S Orca St, Seattle, Washington, 98108</p>
           </div>
           <div className="contact-info-detail">
             <img src={phone} />

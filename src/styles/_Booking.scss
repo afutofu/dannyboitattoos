@@ -25,13 +25,18 @@
     margin-bottom: 30px;
 
     p {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: calc($headingSize - 2px);
+      margin-bottom: 23px;
+    }
+
+    span {
+      font-weight: 600;
+      margin-right: 15px;
     }
 
     img {
-      width: 330px;
-      height: 360px;
+      width: 310px;
+      height: 350px;
       background-color: $bgColor;
       filter: grayscale(100%);
 

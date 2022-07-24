@@ -16,7 +16,7 @@ const Gallery = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              <span className="instagram">Instagram</span>
             </a>
           </p>
         </div>
