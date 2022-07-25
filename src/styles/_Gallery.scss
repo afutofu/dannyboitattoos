@@ -1,5 +1,24 @@
 @import "./variables";
 
+@keyframes slideRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    // Width of the absolute container
+    right: -(calc($imageSize * 6 + 6 * 5vw));
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -(calc($imageSize * 6 + 6 * 5vw));
+  }
+}
+
 #gallery {
   position: relative;
   padding-top: 60px;
@@ -13,7 +32,7 @@
 
   .image-container {
     position: relative;
-    min-height: calc($imageHeight * 2 + 70px + 90px);
+    min-height: calc($imageSize * 2 + 70px + 90px);
     width: 100%;
     box-sizing: content-box;
     overflow: hidden;
@@ -21,38 +40,57 @@
 
   .image-container-1 {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
-    height: $imageHeight;
+    height: $imageSize;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
 
+    animation: slideRight 15s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
     .image {
-      width: $imageHeight;
-      height: $imageHeight;
-      background-color: white;
-      margin-left: 70px;
+      margin-left: 5vw;
     }
   }
 
   .image-container-2 {
     position: absolute;
-    top: calc($imageHeight + 70px);
+    top: calc($imageSize + 5vw + 5px);
     left: 0;
-    height: $imageHeight;
+    height: $imageSize;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
 
+    animation: slideLeft 15s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
     .image {
-      width: $imageHeight;
-      height: $imageHeight;
-      background-color: white;
-      margin-right: 70px;
+      margin-right: 5vw;
+    }
+  }
+
+  .image {
+    width: $imageSize;
+    height: $imageSize;
+    background-color: white;
+    cursor: pointer;
+
+    transition: box-shadow 0.1s;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 1px white;
     }
   }
 

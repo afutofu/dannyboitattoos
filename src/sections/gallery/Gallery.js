@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Gallery = () => {
-  const [pics, setPics] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  const [pics, setPics] = useState([1, 2, 3, 4, 5, 6]);
 
   return (
     <section id="gallery">
@@ -26,8 +26,14 @@ const Gallery = () => {
           {pics.map((el) => {
             return <div className="image">{el}</div>;
           })}
+          {pics.map((el) => {
+            return <div className="image">{el}</div>;
+          })}
         </div>
         <div className="image-container-2">
+          {pics.map((el) => {
+            return <div className="image">{el}</div>;
+          })}
           {pics.map((el) => {
             return <div className="image">{el}</div>;
           })}
