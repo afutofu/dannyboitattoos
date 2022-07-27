@@ -2,20 +2,57 @@
 
 @keyframes slideRight {
   0% {
-    right: 0;
+    transform: translateX(0);
   }
   100% {
     // Width of the absolute container
-    right: -(calc($imageSize * 6 + 6 * 5vw));
+    // right: -(calc($imageSize * 6 + 6 * 5vw));
+    transform: translateX(calc($imageSize * 6 + 6 * 5vw));
+  }
+}
+
+@keyframes slideRight2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc($imageSize * 1.5 * 6 + 6 * 5vw));
+  }
+}
+
+@keyframes slideRight3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc($imageSize * 2 * 6 + 6 * 5vw));
   }
 }
 
 @keyframes slideLeft {
   0% {
-    left: 0;
+    transform: translateX(0);
   }
   100% {
-    left: -(calc($imageSize * 6 + 6 * 5vw));
+    transform: translateX(calc(($imageSize * 6 + 6 * 5vw) * -1));
+  }
+}
+
+@keyframes slideLeft2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(($imageSize * 1.5 * 6 + 6 * 5vw) * -1));
+  }
+}
+
+@keyframes slideLeft3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(($imageSize * 2 * 6 + 6 * 5vw) * -1));
   }
 }
 
@@ -30,12 +67,24 @@
   align-items: center;
   background-color: $bgColor;
 
+  @media only screen and (max-width: 600px) {
+    padding: 30px 0;
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding-bottom: 0px;
+  }
+
   .image-container {
     position: relative;
     min-height: calc($imageSize * 2 + 70px + 90px);
     width: 100%;
     box-sizing: content-box;
     overflow: hidden;
+
+    @media only screen and (max-width: 600px) {
+      min-height: calc($imageSize * 1.5 * 2 + 70px + 90px);
+    }
   }
 
   .image-container-1 {
@@ -49,10 +98,20 @@
     align-items: center;
     box-sizing: border-box;
 
-    animation: slideRight 15s linear infinite;
+    animation: slideRight 25s linear infinite;
 
     &:hover {
       animation-play-state: paused;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: calc($imageSize * 1.5);
+      animation: slideRight2 25s linear infinite;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: calc($imageSize * 2);
+      animation: slideRight3 25s linear infinite;
     }
 
     .image {
@@ -70,10 +129,22 @@
     align-items: center;
     box-sizing: border-box;
 
-    animation: slideLeft 15s linear infinite;
+    animation: slideLeft 25s linear infinite;
 
     &:hover {
       animation-play-state: paused;
+    }
+
+    @media only screen and (max-width: 600px) {
+      top: calc($imageSize * 1.5 + 5vw + 5px);
+      height: calc($imageSize * 1.5);
+      animation: slideLeft2 25s linear infinite;
+    }
+
+    @media only screen and (max-width: 600px) {
+      top: calc($imageSize * 2 + 5vw + 5px);
+      height: calc($imageSize * 2);
+      animation: slideLeft3 25s linear infinite;
     }
 
     .image {
@@ -82,6 +153,7 @@
   }
 
   .image {
+    position: relative;
     width: $imageSize;
     height: $imageSize;
     background-color: white;
@@ -92,9 +164,19 @@
     &:hover {
       box-shadow: 0px 0px 10px 1px white;
     }
+
+    @media only screen and (max-width: 600px) {
+      width: calc($imageSize * 1.5);
+      height: calc($imageSize * 1.5);
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: calc($imageSize * 2);
+      height: calc($imageSize * 2);
+    }
   }
 
-  ::before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -107,7 +189,7 @@
     transform: skewY(2deg);
   }
 
-  ::after {
+  &::after {
     content: "";
     position: absolute;
     left: 0;

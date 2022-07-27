@@ -17,6 +17,10 @@
     left: 0;
     width: 100vw;
     object-fit: cover;
+
+    @media only screen and (max-width: 992px) {
+      height: 100vh;
+    }
   }
 
   .book-info {
@@ -24,12 +28,22 @@
     bottom: 13vh;
     right: 10vw;
 
+    @media only screen and (max-width: 992px) {
+      bottom: 11vh;
+      right: 9vw;
+    }
+
     .text {
       color: $mainTextColor;
       text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
       margin-bottom: 40px;
       font-size: calc($headingSize);
       font-weight: 500;
+
+      @media only screen and (max-width: 992px) {
+        font-size: calc($headingSize - 4px);
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -44,11 +58,28 @@
   color: $mainTextColor;
   background-color: $bgColor;
 
+  @media only screen and (max-width: 600px) {
+    height: calc($headerHeight - 30px);
+  }
+
   .container {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 95%;
+    }
   }
 
   .instagram-icon {
@@ -61,25 +92,35 @@
       box-shadow: 0px 0px 10px 1px #ff00c7;
     }
 
+    @media only screen and (max-width: 600px) {
+      flex-basis: 80px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      flex-basis: 30px;
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 300px) {
+      display: none;
+    }
+
     img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
 
       transition: box-shadow 0.1s;
-    }
 
-    ::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: calc(100% + 45px);
-      z-index: -1;
-      background-color: $bgColor;
-      transform-origin: top right;
-      transform: skewY(-2deg);
+      @media only screen and (max-width: 992px) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -87,6 +128,14 @@
     font-family: "Dancing Script", sans-serif;
     font-size: $titleSize;
     flex-basis: 0;
+
+    @media only screen and (max-width: 992px) {
+      font-size: $titleSize - 4px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: $titleSize - 10px;
+    }
   }
 
   h2 {
@@ -96,6 +145,31 @@
     flex-basis: 250px;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: 992px) {
+      font-size: $navItemSize - 3px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: $navItemSize - 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: calc(100% + 45px);
+    z-index: -1;
+    background-color: $bgColor;
+    transform-origin: top right;
+    transform: skewY(-2deg);
   }
 }
 
@@ -119,6 +193,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 992px) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 90%;
+    }
   }
 
   h3 {
@@ -133,6 +223,18 @@
     &:hover {
       color: white;
       text-shadow: 0px 0px 5px white, 0px 0px 5px white;
+    }
+
+    @media only screen and (max-width: 992px) {
+      font-size: $navItemSize - 2px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: $navItemSize - 4px;
+    }
+
+    @media only screen and (max-width: 300px) {
+      font-size: $navItemSize - 8px;
     }
   }
 }

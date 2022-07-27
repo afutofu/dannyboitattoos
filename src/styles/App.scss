@@ -16,6 +16,10 @@
 
 .container {
   width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    width: 70%;
+  }
 }
 
 .info {
@@ -25,19 +29,59 @@
   margin-bottom: 70px;
   z-index: 20;
 
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   h2 {
     font-weight: 700;
     font-size: $infoTitleSize;
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 4px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 6px);
+    }
   }
 
   h3 {
     font-weight: 400;
     font-size: calc($infoTitleSize - 6px);
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 10px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 12px);
+    }
   }
 
   p {
     font-weight: 400;
     font-size: calc($infoTitleSize - 10px);
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 14px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 14px);
+    }
   }
 
   a {
@@ -53,19 +97,59 @@
   text-transform: uppercase;
   margin-bottom: 70px;
 
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   h2 {
     font-weight: 700;
     font-size: $infoTitleSize;
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 4px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 6px);
+    }
   }
 
   h3 {
     font-weight: 400;
     font-size: calc($infoTitleSize - 6px);
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 10px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 12px);
+    }
   }
 
   p {
     font-weight: 400;
     font-size: calc($infoTitleSize - 10px);
+
+    @media only screen and (max-width: 992px) {
+      font-size: calc($infoTitleSize - 14px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: calc($infoTitleSize - 14px);
+    }
   }
 
   a {
@@ -94,6 +178,12 @@
   &:hover {
     border-color: $bgColor;
   }
+
+  @media only screen and (max-width: 992px) {
+    font-size: calc($headingSize - 4px);
+    width: 120px;
+    height: 40px;
+  }
 }
 
 .book-button-alt {
@@ -113,6 +203,12 @@
   &:hover {
     border-color: $mainTextColor;
   }
+
+  @media only screen and (max-width: 992px) {
+    font-size: calc($headingSize - 4px);
+    width: 120px;
+    height: 40px;
+  }
 }
 
 footer {
@@ -125,4 +221,8 @@ footer {
   background-color: $mainTextColor;
   color: $bgColor;
   font-family: "Montserrat", sans-serif;
+
+  @media only screen and (max-width: 992px) {
+    font-size: 16px;
+  }
 }

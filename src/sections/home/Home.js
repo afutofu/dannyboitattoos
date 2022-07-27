@@ -15,7 +15,7 @@ const Home = () => {
       <div className="book-info">
         <div className="text">
           <p>655 S Orca St</p>
-          <p>Seattle, Washington, 98108</p>
+          <p>Seattle, Washington 98108</p>
         </div>
         <BookButton>Book</BookButton>
       </div>
