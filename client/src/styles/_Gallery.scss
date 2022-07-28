@@ -89,7 +89,7 @@
 
   .image-container-1 {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 0;
     height: $imageSize;
     display: flex;
@@ -121,7 +121,7 @@
 
   .image-container-2 {
     position: absolute;
-    top: calc($imageSize + 5vw + 5px);
+    top: calc($imageSize + 5vw + 10px);
     left: 0;
     height: $imageSize;
     display: flex;
@@ -136,13 +136,13 @@
     }
 
     @media only screen and (max-width: 600px) {
-      top: calc($imageSize * 1.5 + 5vw + 5px);
+      top: calc($imageSize * 1.5 + 5vw + 10px);
       height: calc($imageSize * 1.5);
       animation: slideLeft2 25s linear infinite;
     }
 
     @media only screen and (max-width: 600px) {
-      top: calc($imageSize * 2 + 5vw + 5px);
+      top: calc($imageSize * 2 + 5vw + 10px);
       height: calc($imageSize * 2);
       animation: slideLeft3 25s linear infinite;
     }

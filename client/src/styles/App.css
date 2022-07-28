@@ -424,7 +424,7 @@
 }
 #gallery .image-container-1 {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 0;
   height: 20vw;
   display: flex;
@@ -458,7 +458,7 @@
 }
 #gallery .image-container-2 {
   position: absolute;
-  top: calc(25vw + 5px);
+  top: calc(25vw + 10px);
   left: 0;
   height: 20vw;
   display: flex;
@@ -474,7 +474,7 @@
 }
 @media only screen and (max-width: 600px) {
   #gallery .image-container-2 {
-    top: calc(35vw + 5px);
+    top: calc(35vw + 10px);
     height: 30vw;
     -webkit-animation: slideLeft2 25s linear infinite;
             animation: slideLeft2 25s linear infinite;
@@ -482,7 +482,7 @@
 }
 @media only screen and (max-width: 600px) {
   #gallery .image-container-2 {
-    top: calc(45vw + 5px);
+    top: calc(45vw + 10px);
     height: 40vw;
     -webkit-animation: slideLeft3 25s linear infinite;
             animation: slideLeft3 25s linear infinite;

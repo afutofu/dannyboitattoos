@@ -22,8 +22,6 @@ const Navbar = () => {
       let topOfScreenPosition =
         window.pageYOffset || document.documentElement.scrollTop;
 
-      console.log(header.clientHeight);
-
       // Make navbar stick until roughly out of screen
       if (topOfScreenPosition < header.clientHeight) {
         navbarDOM.style.position = "relative";
