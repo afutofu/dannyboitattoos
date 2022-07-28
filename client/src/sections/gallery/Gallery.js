@@ -16,10 +16,16 @@ const Gallery = () => {
         let tempPosts1 = [];
         let tempPosts2 = [];
 
-        res.data.map((post, i) => {
-          if (i < 6) tempPosts1.push(post);
-          else tempPosts2.push(post);
-        });
+        // res.data.map((post, i) => {
+        //   if (i < 6) tempPosts1.push(post);
+        //   else tempPosts2.push(post);
+        // });
+
+        for (let i = 0; i < res.data.length; i++) {
+          if (i < 6) tempPosts1.push(res.data[i]);
+          else tempPosts2.push(res.data[i]);
+        }
+
         setPosts1([...tempPosts1]);
         setPosts2([...tempPosts2]);
       })
@@ -57,7 +63,11 @@ const Gallery = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="image" src={post.media_url} />
+                  <img
+                    className="image"
+                    alt="Instagram Post"
+                    src={post.media_url}
+                  />
                 </a>
               );
             })}
@@ -70,7 +80,11 @@ const Gallery = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="image" src={post.media_url} />
+                  <img
+                    className="image"
+                    alt="Instagram Post"
+                    src={post.media_url}
+                  />
                 </a>
               );
             })}
@@ -85,7 +99,11 @@ const Gallery = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="image" src={post.media_url} />
+                  <img
+                    className="image"
+                    alt="Instagram Post"
+                    src={post.media_url}
+                  />
                 </a>
               );
             })}
@@ -98,7 +116,11 @@ const Gallery = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="image" src={post.media_url} />
+                  <img
+                    className="image"
+                    alt="Instagram Post"
+                    src={post.media_url}
+                  />
                 </a>
               );
             })}
