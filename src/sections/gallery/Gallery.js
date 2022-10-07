@@ -7,8 +7,6 @@ const Gallery = () => {
 
   // Retreive posts from API
   useEffect(() => {
-    console.log(process.env.REACT_APP_IG_ACCESS_TOKEN);
-
     // Use Instagram Basic Display API to access the posts
     axios
       .get(
