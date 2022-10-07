@@ -37,6 +37,7 @@ const Gallery = () => {
       })
       .catch((err) => {
         console.log("Error in retreiving posts");
+        console.log(err);
       });
   }, []);
 
