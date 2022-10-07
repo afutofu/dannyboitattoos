@@ -10,7 +10,7 @@ const Gallery = () => {
     // Use Instagram Basic Display API to access the posts
     axios
       .get(
-        `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${process.env.IG_ACCESS_TOKEN}`
+        `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${process.env.REACT_APP_IG_ACCESS_TOKEN}`
       )
       .then((IGres) => {
         let postCount = 0;
