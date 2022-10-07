@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="gmap_canvas">
               <iframe
                 title="google maps"
-                width="250"
+                width="100%"
                 height="250"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=655%20S%20Orcas%20St,%20Seattle,%20WA%2098108,%20USA&t=&z=15&ie=UTF8&iwloc=&output=embed"

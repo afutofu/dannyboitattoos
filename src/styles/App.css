@@ -738,7 +738,9 @@
   }
 }
 #contact .directions {
+  width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: center;
 }
@@ -749,14 +751,11 @@
   }
 }
 #contact .directions div {
-  margin-right: 30px;
-}
-@media only screen and (max-width: 768px) {
-  #contact .directions div {
-    margin: 0px;
-  }
+  margin-right: 0;
+  width: 100%;
 }
 #contact .directions a {
+  margin-bottom: 20px;
   color: white;
   text-decoration: none;
   font-size: 22px;
