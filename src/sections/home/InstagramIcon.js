@@ -10,7 +10,7 @@ const InstagramIcon = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={icon} />
+        <img src={icon} alt="instagram logo" />
       </a>
     </div>
   );

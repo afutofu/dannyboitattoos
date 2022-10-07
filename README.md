@@ -1,6 +1,6 @@
 # DannyBoiTattoos
 
-Website Link: [https://dannyboitattoos.herokuapp.com](https://dannyboitattoos.herokuapp.com)
+Website Link: [https://dannyboitattoos.netlify.app](https://dannyboitattoos.netlify.app)
 
 Instagram Page: [https://www.instagram.com/dannyboimendez88/](https://www.instagram.com/dannyboimendez88/)
 
@@ -10,5 +10,17 @@ Technologies used:
 
 - [React](https://reactjs.org/) - Frontend framework
 - [Instagram Basic Display API](https://developers.facebook.com/docs/instagram-basic-display-api/) - API to fetch instagram posts
-- [Node.js](https://nodejs.org/en/) - Backend runtime environment
-- [Express](https://expressjs.com/) - Backend framework to create API for fetching instagram posts
+
+How to run site locally:
+
+1. On the root directory /aahaa-gateway, install dependencies by running the command:
+
+```
+npm install
+```
+
+2. Once dependencies are installed, run the following command to run the site locally:
+
+```
+npm start
+```

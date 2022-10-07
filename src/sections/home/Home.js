@@ -9,7 +9,7 @@ import BookButton from "../../components/BookButton";
 const Home = () => {
   return (
     <section id="home">
-      <img className="background-image" src={dbt1} />
+      <img className="background-image" src={dbt1} alt="tattoo artist desk" />
       <Header />
       <Navbar />
       <div className="book-info">

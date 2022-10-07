@@ -7,30 +7,36 @@ const Gallery = () => {
 
   // Retreive posts from API
   useEffect(() => {
+    // Use Instagram Basic Display API to access the posts
     axios
-      .get("/api/posts")
-      .then((res) => {
-        // console.log(res.data);
-        // Set posts immediately after retreiving data
+      .get(
+        `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${process.env.IG_ACCESS_TOKEN}`
+      )
+      .then((IGres) => {
+        let postCount = 0;
+        let posts = IGres.data.data.filter((post) => {
+          // Get at least 12 non-video posts
+          if (postCount < 12 && post.media_type !== "VIDEO") {
+            postCount++;
+            return post;
+          }
+          return false;
+        });
 
         let tempPosts1 = [];
         let tempPosts2 = [];
 
-        // res.data.map((post, i) => {
-        //   if (i < 6) tempPosts1.push(post);
-        //   else tempPosts2.push(post);
-        // });
-
-        for (let i = 0; i < res.data.length; i++) {
-          if (i < 6) tempPosts1.push(res.data[i]);
-          else tempPosts2.push(res.data[i]);
+        // Keep half for upper posts and half for lower posts to be rendered
+        for (let i = 0; i < posts.length; i++) {
+          if (i < 6) tempPosts1.push(posts[i]);
+          else tempPosts2.push(posts[i]);
         }
 
         setPosts1([...tempPosts1]);
         setPosts2([...tempPosts2]);
       })
       .catch((err) => {
-        console.log(err.response.data.msg);
+        console.log("Error in retreiving posts");
       });
   }, []);
 

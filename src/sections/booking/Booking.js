@@ -37,7 +37,7 @@ const Contact = () => {
               <span>Sunday</span> 2:00 pm - 8:00 pm
             </p>
           </div>
-          <img src={dbt2} />
+          <img src={dbt2} alt="tattoo artist working on a tattoo" />
         </div>
         <BookButton alt={true}>Book</BookButton>
       </div>

@@ -16,19 +16,19 @@ const Contact = () => {
         </div>
         <div className="contact-info">
           <div className="contact-info-detail">
-            <img src={tattooMachine} />
+            <img src={tattooMachine} alt="tattoo machine icon" />
             <p>Danny Mendez</p>
           </div>
           <div className="contact-info-detail">
-            <img src={location} />
+            <img src={location} alt="location icon" />
             <p>655 S Orca St, Seattle, Washington, 98108</p>
           </div>
           <div className="contact-info-detail">
-            <img src={phone} />
+            <img src={phone} alt="phone icon" />
             <p>+1 (425) 245-9998</p>
           </div>
           <div className="contact-info-detail">
-            <img src={mail} />
+            <img src={mail} alt="mail icon" />
             <p>evaloso@yahoo.com</p>
           </div>
         </div>
@@ -36,6 +36,7 @@ const Contact = () => {
           <div className="mapouter">
             <div className="gmap_canvas">
               <iframe
+                title="google maps"
                 width="250"
                 height="250"
                 id="gmap_canvas"
