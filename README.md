@@ -8,8 +8,8 @@ Landing page for DannyBoiTattoos.
 
 Technologies used:
 
-- [React](https://reactjs.org/) - Frontend framework
-- [Instagram Basic Display API](https://developers.facebook.com/docs/instagram-basic-display-api/) - API to fetch instagram posts
+- [React](https://reactjs.org/)
+- [Instagram Basic Display API](https://developers.facebook.com/docs/instagram-basic-display-api/)
 
 How to run site locally:
 
